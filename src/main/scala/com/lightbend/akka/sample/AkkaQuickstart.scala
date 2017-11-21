@@ -56,6 +56,7 @@ class Printer extends Actor with ActorLogging {
 }
 //#printer-actor
 
+
 //#main-class
 object AkkaQuickstart extends App {
   import Greeter._
@@ -99,3 +100,8 @@ object AkkaQuickstart extends App {
 }
 //#main-class
 //#full-example
+
+
+class MyNumber(a:Int){
+  def multiply = a * a
+}

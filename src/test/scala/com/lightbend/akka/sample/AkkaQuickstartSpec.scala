@@ -8,6 +8,7 @@ import scala.concurrent.duration._
 import Greeter._
 import Printer._
 
+
 //#test-classes
 class AkkaQuickstartSpec(_system: ActorSystem)
   extends TestKit(_system)
@@ -34,6 +35,13 @@ class AkkaQuickstartSpec(_system: ActorSystem)
     helloGreeter ! Greet
     testProbe.expectMsg(500 millis, Greeting(s"$helloGreetingMessage, $greetPerson"))
   }
+
   //#first-test
+
+  "silly test" should "pass" in {
+    true shouldBe(true)
+//    val x = MyNumber(2)
+//    x.multiply should
+  }
 }
 //#full-example
